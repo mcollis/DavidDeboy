@@ -1,0 +1,140 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../../.rvm/gems/ruby-1.9.3-p0/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../../../../../.rvm/gems/ruby-1.9.3-p0/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../../../../../.rvm/gems/ruby-1.9.3-p0/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../../../../../.rvm/gems/ruby-1.9.3-p0/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../../../../../.rvm/gems/ruby-1.9.3-p0/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../../../../../.rvm/gems/ruby-1.9.3-p0/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../../../../../.rvm/gems/ruby-1.9.3-p0/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../../../../../.rvm/gems/ruby-1.9.3-p0/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, ../../../../../../../../.rvm/gems/ruby-1.9.3-p0/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 11, ../scss/screen.scss */
+body {
+  background: #848484;
+  color: #FFF;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+/* line 19, ../scss/screen.scss */
+a {
+  color: #4a622b;
+  text-decoration: none;
+}
+/* line 22, ../scss/screen.scss */
+a:hover {
+  color: #c1ff6f;
+}
+
+/* line 27, ../scss/screen.scss */
+#page-wrapper {
+  background: #9C9C9C;
+  margin: 100px auto;
+  padding: 5px;
+  width: 950px;
+}
+
+/* line 34, ../scss/screen.scss */
+#header {
+  background: url("img/header.bg.png") no-repeat center center;
+  font-size: 14px;
+  height: 145px;
+  position: relative;
+}
+/* line 39, ../scss/screen.scss */
+#header #logo {
+  left: 65px;
+  position: absolute;
+  top: 50px;
+}
+/* line 45, ../scss/screen.scss */
+#header #block-system-main-menu {
+  float: right;
+}
+/* line 48, ../scss/screen.scss */
+#header #block-system-main-menu .content ul.menu {
+  display: inline-block;
+  list-style: none;
+  margin: 50px 65px 10px 0;
+}
+/* line 52, ../scss/screen.scss */
+#header #block-system-main-menu .content ul.menu li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 0 0 15px;
+  padding: 0;
+}
+/* line 57, ../scss/screen.scss */
+#header #block-system-main-menu .content ul.menu li a {
+  color: #4A622B;
+  text-decoration: none;
+}
+/* line 61, ../scss/screen.scss */
+#header #block-system-main-menu .content ul.menu li a.active, #header #block-system-main-menu .content ul.menu li a:hover {
+  color: #C1FF6F;
+}
+
+/* line 71, ../scss/screen.scss */
+#main-wrapper {
+  padding: 65px;
+}

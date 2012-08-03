@@ -1,0 +1,5 @@
+name = David Deboy
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = css/screen.css
