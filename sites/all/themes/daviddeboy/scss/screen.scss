@@ -8,6 +8,49 @@
 $link: #4A622B;
 $hover: #C1FF6F;
 
+$columns: 6;
+$gutter: 20px;
+$siteWidth: 820px;
+
+$column6: ( $siteWidth - ( $gutter * 5 ) ) / 6;
+$column3: $column6 * 2 + $gutter;
+$column2: ( $column6 * 3 ) + ( $gutter * 2 );
+
+.column-6 {
+    width: $column6;
+}
+
+.column-3 {
+    width: $column3;
+}
+
+.column-2 {
+    width: $column2;
+}
+
+.column-gutter {
+    margin-right: $gutter;
+}
+
+.column-float {
+    float: left;
+}
+
+.full-column-float {
+    position: relative;
+    width: $siteWidth + $gutter;
+}
+
+.column-4-float {
+    position: relative;
+    width: ( $column3 * 2 ) + ( $gutter * 2 );
+}
+
+.column-3-float {
+    position: relative;
+    width: $column2 + $gutter;
+}
+
 body {
   background: #848484;
   color: #FFF;
@@ -70,4 +113,65 @@ a {
 
 #main-wrapper {
   padding: 65px;
+  h1,
+  h2 {
+      color: $hover;
+      font-size: 24px;
+      font-weight: normal;
+      font-style: italic;
+      line-height: 1.5em;
+  }
+
+  p {
+      margin-bottom: 1.5em;
+  }
+
+  .node-project {
+      @extend .full-column-float;
+      .group-left {
+          @extend .column-2;
+          margin-right: $gutter;
+      }
+      .group-right {
+          @extend .column-3-float;
+          .field-type-image {
+              .main-image {
+                  border: 1px solid $hover;
+                  margin-bottom: $gutter;
+              }
+              .field-items {
+                  .field-item {
+                      float: left;
+                      margin: 0 $gutter $gutter 0;
+                      img {
+                          border: 1px solid $hover;
+                          display: block;
+                          height: $column6 * 3 / 4 - 2;
+                          line-height: 0;
+                          width: $column6 - 2;
+                      }
+                  }
+              }
+          }
+      }
+  }
+}
+
+.field-type-image {
+    margin-bottom: $gutter;
+    a {
+        border: 1px solid $hover;
+        display: block;
+        line-height: 0;
+    }
+}
+
+.panels-flexible-region {
+    width: 100%;
+}
+
+.item-list {
+    .pager {
+        padding-right: $gutter * 2;
+    }
 }
