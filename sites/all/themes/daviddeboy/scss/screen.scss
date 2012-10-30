@@ -125,6 +125,42 @@ a {
   p {
       margin-bottom: 1.5em;
   }
+  textarea,
+  input.form-text {
+      background: white;
+      border: 1px solid $link;
+      padding: 4px;
+      width: $column2 - 20px;
+  }
+  textarea {
+      width: $column2 - 12px;
+  }
+
+  #home-page {
+      @extend .full-column-float;
+      .group-left {
+          @extend .column-2;
+          margin-right: $gutter;
+      }
+      .group-right {
+          @extend .column-3-float;
+      }
+      img {
+          border: 1px solid $hover;
+          margin-bottom: $gutter;
+      }
+  }
+
+  #profile-page {
+      @extend .full-column-float;
+      .group-left {
+          margin-right: $gutter;
+          width: $column3 * 2;
+      }
+      .group-right {
+          width: $column3;
+      }
+  }
 
   .node-project {
       @extend .full-column-float;
@@ -155,6 +191,21 @@ a {
           }
       }
   }
+
+    .node-webform {
+        @extend .full-column-float;
+        .field-name-body {
+            @extend .column-2;
+            clear: left;
+            float: left;
+            margin-right: $gutter;
+        }
+        .webform-client-form {
+            @extend .column-3-float;
+            float: right;
+            top: -11px;
+        }
+    }
 }
 
 .field-type-image {
